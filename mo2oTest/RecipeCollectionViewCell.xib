@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BYo-g0-q1H" customClass="RecipeCollectionViewCell" customModule="mo2oTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9nm-No-99m">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="140"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOD-Vk-cas">
+                        <rect key="frame" x="8" y="148" width="184" height="44"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="9nm-No-99m" firstAttribute="height" secondItem="BYo-g0-q1H" secondAttribute="height" multiplier="0.7" id="6Ur-Ih-w3q"/>
+                <constraint firstItem="sOD-Vk-cas" firstAttribute="leading" secondItem="BYo-g0-q1H" secondAttribute="leading" constant="8" id="Dp9-Ow-o7f"/>
+                <constraint firstItem="sOD-Vk-cas" firstAttribute="top" secondItem="9nm-No-99m" secondAttribute="bottom" constant="8" id="Exy-Na-86l"/>
+                <constraint firstItem="9nm-No-99m" firstAttribute="leading" secondItem="BYo-g0-q1H" secondAttribute="leading" id="PT7-pZ-82s"/>
+                <constraint firstItem="9nm-No-99m" firstAttribute="top" secondItem="BYo-g0-q1H" secondAttribute="top" id="RUI-vX-t5s"/>
+                <constraint firstAttribute="trailing" secondItem="9nm-No-99m" secondAttribute="trailing" id="cH9-zp-GAx"/>
+                <constraint firstAttribute="bottom" secondItem="sOD-Vk-cas" secondAttribute="bottom" constant="8" id="p9x-AK-wOb"/>
+                <constraint firstAttribute="trailing" secondItem="sOD-Vk-cas" secondAttribute="trailing" constant="8" id="yAM-mq-6lm"/>
+            </constraints>
+            <size key="customSize" width="153" height="156"/>
+            <connections>
+                <outlet property="imageView" destination="9nm-No-99m" id="iNp-Lz-13w"/>
+                <outlet property="nameLabel" destination="sOD-Vk-cas" id="qPE-gk-HFB"/>
+            </connections>
+            <point key="canvasLocation" x="14" y="88"/>
+        </collectionViewCell>
+    </objects>
+</document>
